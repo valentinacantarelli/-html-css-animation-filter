@@ -71,11 +71,31 @@
 /*bw hover*/
 .ex-6-img{
     filter: grayscale(0);
-    transition: filter 2s;
+    transition: filter;
     
 }
 .ex-6-img:hover {
     filter: grayscale(1);
+}
+/*bw slow*/
+.ex-7-img {
+    filter: grayscale(0);
+    transition: filter 2s;
+
+}
+.ex-7-img:hover {
+    filter: grayscale(1);
+}
+/*filter slow border radius*/
+.ex-8-img{
+    filter: hue-rotate(0deg);
+    border-radius: 0%;
+    transition: filter 2s, border-radius 2s;
+
+}
+.ex-8-img:hover {
+    filter: hue-rotate(180deg);
+    border-radius: 20px;
 }
 
 .ex-9-img {
