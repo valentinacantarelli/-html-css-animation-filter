@@ -97,13 +97,38 @@
     filter: hue-rotate(180deg);
     border-radius: 20px;
 }
-
+/*nono effetto*/
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    filter: blur(0);
+    border-radius: 0%;
+    transition: all 3s;
 }
+/* filter slow e scale*/
+.ex-9-img:hover{
+    filter: blur(2px);
+    border-radius: 25px;
+    transform: scale(0.6);
+
+}
+
+/*decimo effetto*/
 .ex-10-icon {
     font-size: 60px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+/*icona gira*/
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
 }
 .ex-11-icon {
     font-size: 60px;
