@@ -41,22 +41,41 @@
     height: 100px;
     background: red;
     opacity: 1;
-    transition: opacity 3s;
-    
+    transition: opacity 3s;    
 }
 /*scomparsa*/
 .ex-4-square:hover {
     opacity: 0;
 }
 
+/*quinto effetto*/
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition: transform 2s ;
 }
+/* hover grande click piccolo*/
+.ex-5-square:hover {
+    transform: scale(1.7);
+}
+.ex-5-square:active{
+    transform: scale(1);
+}
+
+/*effetti immagini*/
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+}
+/*bw hover*/
+.ex-6-img{
+    filter: grayscale(0);
+    transition: filter 2s;
+    
+}
+.ex-6-img:hover {
+    filter: grayscale(1);
 }
 
 .ex-9-img {
